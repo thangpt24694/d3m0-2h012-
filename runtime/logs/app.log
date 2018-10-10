@@ -1,0 +1,2564 @@
+2018-10-09 18:42:18 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Request.php:1212
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Request.php(1194): yii\web\Request->loadCookies()
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(282): yii\web\Request->getCookies()
+#2 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(631): yii\web\User->loginByCookie()
+#3 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#4 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#5 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#6 D:\Xampp\htdocs\demo-shop\vendor\noumo\easyii\AdminModule.php(41): yii\base\Component->__get('isGuest')
+#7 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Object.php(107): yii\easyii\AdminModule->init()
+#8 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php(138): yii\base\Object->__construct(Array)
+#9 [internal function]: yii\base\Module->__construct('admin', Object(yii\web\Application), Array)
+#10 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\di\Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#11 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\easyii\\Admi...', Array, Array)
+#12 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\easyii\\Admi...', Array, Array)
+#13 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject(Array, Array)
+#14 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('admin')
+#15 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(63): yii\base\Application->bootstrap()
+#16 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#17 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#18 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#19 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->__construct(Array)
+#20 {main}
+2018-10-09 18:42:17 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61043'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103337.004
+    'REQUEST_TIME' => 1539103337
+]
+2018-10-09 18:42:19 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Request.php:1212
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Request.php(1194): yii\web\Request->loadCookies()
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(282): yii\web\Request->getCookies()
+#2 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(631): yii\web\User->loginByCookie()
+#3 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#4 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#5 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#6 D:\Xampp\htdocs\demo-shop\vendor\noumo\easyii\AdminModule.php(41): yii\base\Component->__get('isGuest')
+#7 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Object.php(107): yii\easyii\AdminModule->init()
+#8 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php(138): yii\base\Object->__construct(Array)
+#9 [internal function]: yii\base\Module->__construct('admin', Object(yii\web\Application), Array)
+#10 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\di\Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#11 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\easyii\\Admi...', Array, Array)
+#12 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\easyii\\Admi...', Array, Array)
+#13 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject(Array, Array)
+#14 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('admin')
+#15 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(63): yii\base\Application->bootstrap()
+#16 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#17 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#18 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#19 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->__construct(Array)
+#20 {main}
+2018-10-09 18:42:19 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://demoshop.test/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61049'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103339.37
+    'REQUEST_TIME' => 1539103339
+]
+2018-10-09 18:47:25 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant INTL_ICU_VERSION - assumed 'INTL_ICU_VERSION'' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\requirements.php:67
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\requirements.php(67): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'D:\\Xampp\\htdocs...', 67, Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\YiiRequirementChecker.php(71): require('D:\\Xampp\\htdocs...')
+#2 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\YiiRequirementChecker.php(115): YiiRequirementChecker->check('D:\\Xampp\\htdocs...')
+#3 D:\Xampp\htdocs\demo-shop\requirements.php(132): YiiRequirementChecker->checkYii()
+#4 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Xampp\\htdocs...')
+#5 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:/Xampp/htdocs...', Array)
+#6 D:\Xampp\htdocs\demo-shop\app\views\install\step1.php(18): yii\base\View->renderFile('D:/Xampp/htdocs...')
+#7 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Xampp\\htdocs...')
+#8 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Xampp\\htdocs...', Array)
+#9 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Xampp\\htdocs...', Array, Object(app\controllers\InstallController))
+#10 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('step1', Array, Object(app\controllers\InstallController))
+#11 D:\Xampp\htdocs\demo-shop\app\controllers\InstallController.php(53): yii\base\Controller->render('step1')
+#12 [internal function]: app\controllers\InstallController->actionStep1()
+#13 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('step1', Array)
+#16 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('install/step1', Array)
+#17 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#19 {main}
+2018-10-09 18:47:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61478'
+    'REDIRECT_URL' => '/install/step1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/install/step1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103644.923
+    'REQUEST_TIME' => 1539103644
+]
+2018-10-09 18:47:25 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "favicon.ico".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('favicon.ico', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-09 18:47:25 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://demoshop.test/install/step1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61482'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103645.294
+    'REQUEST_TIME' => 1539103645
+]
+2018-10-09 18:48:21 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant INTL_ICU_VERSION - assumed 'INTL_ICU_VERSION'' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\requirements.php:67
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\requirements.php(67): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'D:\\Xampp\\htdocs...', 67, Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\YiiRequirementChecker.php(71): require('D:\\Xampp\\htdocs...')
+#2 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\YiiRequirementChecker.php(115): YiiRequirementChecker->check('D:\\Xampp\\htdocs...')
+#3 D:\Xampp\htdocs\demo-shop\requirements.php(132): YiiRequirementChecker->checkYii()
+#4 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Xampp\\htdocs...')
+#5 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:/Xampp/htdocs...', Array)
+#6 D:\Xampp\htdocs\demo-shop\app\views\install\step1.php(18): yii\base\View->renderFile('D:/Xampp/htdocs...')
+#7 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Xampp\\htdocs...')
+#8 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Xampp\\htdocs...', Array)
+#9 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Xampp\\htdocs...', Array, Object(app\controllers\InstallController))
+#10 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('step1', Array, Object(app\controllers\InstallController))
+#11 D:\Xampp\htdocs\demo-shop\app\controllers\InstallController.php(53): yii\base\Controller->render('step1')
+#12 [internal function]: app\controllers\InstallController->actionStep1()
+#13 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('step1', Array)
+#16 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('install/step1', Array)
+#17 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#19 {main}
+2018-10-09 18:48:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61572'
+    'REDIRECT_URL' => '/install/step1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/install/step1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103701.392
+    'REQUEST_TIME' => 1539103701
+]
+2018-10-09 18:48:21 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "favicon.ico".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('favicon.ico', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-09 18:48:21 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://demoshop.test/install/step1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61574'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103701.745
+    'REQUEST_TIME' => 1539103701
+]
+2018-10-09 18:51:17 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant INTL_ICU_VERSION - assumed 'INTL_ICU_VERSION'' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\requirements.php:67
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\requirements.php(67): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'D:\\Xampp\\htdocs...', 67, Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\YiiRequirementChecker.php(71): require('D:\\Xampp\\htdocs...')
+#2 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\requirements\YiiRequirementChecker.php(115): YiiRequirementChecker->check('D:\\Xampp\\htdocs...')
+#3 D:\Xampp\htdocs\demo-shop\requirements.php(132): YiiRequirementChecker->checkYii()
+#4 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Xampp\\htdocs...')
+#5 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:/Xampp/htdocs...', Array)
+#6 D:\Xampp\htdocs\demo-shop\app\views\install\step1.php(18): yii\base\View->renderFile('D:/Xampp/htdocs...')
+#7 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(325): require('D:\\Xampp\\htdocs...')
+#8 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\Xampp\\htdocs...', Array)
+#9 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\\Xampp\\htdocs...', Array, Object(app\controllers\InstallController))
+#10 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('step1', Array, Object(app\controllers\InstallController))
+#11 D:\Xampp\htdocs\demo-shop\app\controllers\InstallController.php(53): yii\base\Controller->render('step1')
+#12 [internal function]: app\controllers\InstallController->actionStep1()
+#13 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('step1', Array)
+#16 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('install/step1', Array)
+#17 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#19 {main}
+2018-10-09 18:51:17 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61837'
+    'REDIRECT_URL' => '/install/step1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/install/step1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103877.29
+    'REQUEST_TIME' => 1539103877
+]
+2018-10-09 18:51:17 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "favicon.ico".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('favicon.ico', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-09 18:51:17 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://demoshop.test/install/step1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '61840'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539103877.682
+    'REQUEST_TIME' => 1539103877
+]
+2018-10-09 18:55:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.woff".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('fonts/glyphicon...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-09 18:55:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://demoshop.test'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/install/step1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '62325'
+    'REDIRECT_URL' => '/fonts/glyphicons-halflings-regular.woff'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fonts/glyphicons-halflings-regular.woff'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539104156.486
+    'REQUEST_TIME' => 1539104156
+]
+2018-10-09 18:55:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "fonts/glyphicons-halflings-regular.ttf".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('fonts/glyphicon...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-09 18:55:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '35k0p2f9thsftra2batr3jqfr4'
+    '_csrf' => '4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0HCi6_i5SfpzANoRapW1kES02BoMkEqS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ORIGIN' => 'http://demoshop.test'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/install/step1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=35k0p2f9thsftra2batr3jqfr4; _csrf=4ec3cd52e675d5b8a750e97aef8aacf822f02df5a445fc48dbe8b878fa27308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220HCi6_i5SfpzANoRapW1kES02BoMkEqS%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '62328'
+    'REDIRECT_URL' => '/fonts/glyphicons-halflings-regular.ttf'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fonts/glyphicons-halflings-regular.ttf'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539104156.729
+    'REQUEST_TIME' => 1539104156
+]
+2018-10-10 15:28:07 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:28:07 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264487
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '50756'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178086.999
+    'REQUEST_TIME' => 1539178086
+]
+2018-10-10 15:28:37 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:28:37 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264517
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '50805'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178117.196
+    'REQUEST_TIME' => 1539178117
+]
+2018-10-10 15:28:37 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:28:37 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264517
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '50809'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178117.555
+    'REQUEST_TIME' => 1539178117
+]
+2018-10-10 15:29:31 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:29:31 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264571
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '50893'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178171.831
+    'REQUEST_TIME' => 1539178171
+]
+2018-10-10 15:29:40 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:29:40 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264580
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '50911'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178180.85
+    'REQUEST_TIME' => 1539178180
+]
+2018-10-10 15:30:47 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:30:47 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264647
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51031'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178247.061
+    'REQUEST_TIME' => 1539178247
+]
+2018-10-10 15:32:15 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:32:15 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264735
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51160'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178335.465
+    'REQUEST_TIME' => 1539178335
+]
+2018-10-10 15:32:15 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:32:15 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264735
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51161'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178335.853
+    'REQUEST_TIME' => 1539178335
+]
+2018-10-10 15:32:20 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:32:20 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264740
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51158'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178340.226
+    'REQUEST_TIME' => 1539178340
+]
+2018-10-10 15:32:26 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:32:26 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264746
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51187'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178346.225
+    'REQUEST_TIME' => 1539178346
+]
+2018-10-10 15:33:11 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:33:11 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264791
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51254'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178391.385
+    'REQUEST_TIME' => 1539178391
+]
+2018-10-10 15:34:08 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:34:08 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264848
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51336'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178448.091
+    'REQUEST_TIME' => 1539178448
+]
+2018-10-10 15:35:18 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:35:18 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264918
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51433'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178518.152
+    'REQUEST_TIME' => 1539178518
+]
+2018-10-10 15:36:06 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:36:05 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539264965
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51502'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178565.875
+    'REQUEST_TIME' => 1539178565
+]
+2018-10-10 15:38:00 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:38:00 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265080
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51663'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178680.243
+    'REQUEST_TIME' => 1539178680
+]
+2018-10-10 15:39:28 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:39:28 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265168
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51795'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178768.38
+    'REQUEST_TIME' => 1539178768
+]
+2018-10-10 15:39:28 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:39:28 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265168
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51793'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178768.861
+    'REQUEST_TIME' => 1539178768
+]
+2018-10-10 15:40:15 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:40:15 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265215
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51864'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178815.548
+    'REQUEST_TIME' => 1539178815
+]
+2018-10-10 15:40:16 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:40:15 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265216
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51869'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178815.945
+    'REQUEST_TIME' => 1539178815
+]
+2018-10-10 15:40:29 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:40:29 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265229
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51891'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178829.478
+    'REQUEST_TIME' => 1539178829
+]
+2018-10-10 15:41:28 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:41:28 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265288
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51978'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178888.229
+    'REQUEST_TIME' => 1539178888
+]
+2018-10-10 15:41:40 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:41:40 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265300
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '51999'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178900.428
+    'REQUEST_TIME' => 1539178900
+]
+2018-10-10 15:42:24 [127.0.0.1][0][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/2c9363da/js/jquery-ui.min.js".' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('assets/2c9363da...', Array)
+#1 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\Xampp\htdocs\demo-shop\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Xampp\htdocs\demo-shop\index.php(11): yii\base\Application->run()
+#2 {main}
+2018-10-10 15:42:24 [127.0.0.1][0][-][info][application] $_COOKIE = [
+    '_identity' => '0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[0,\"jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM\",\"86400\"]\";}'
+    'PHPSESSID' => '4g9cd7mdu98ci2jbp56nsd8nf7'
+    '_csrf' => 'eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+    '__expire' => 1539265344
+    'easyii_live_edit' => '0'
+    'admin_return' => '/admin/default/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/Xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/Xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'demoshop.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://demoshop.test/statistics/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8,ja;q=0.7'
+    'HTTP_COOKIE' => '_identity=0c414ca1b3466b3db1187cdc9b39c8b809358c033154537b017355aa9c520183a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B0%2C%22jS_OYJ30eF0hVDT9D6fMSdCg9e6MvIxM%22%2C%2286400%22%5D%22%3B%7D; PHPSESSID=4g9cd7mdu98ci2jbp56nsd8nf7; _csrf=eccfded76e81f925f771d8a111c4ec1c809faade87ab9b0d5803996d2a6cc7a6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gH5Jya1OqkMCCoxCTlkgmqKddaI4H6wJ%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;D:\\Xampp\\php;C:\\composer;C:\\Users\\thanh\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\thanh\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38 Server at demoshop.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.34 (Win32) OpenSSL/1.0.2o PHP/5.6.38'
+    'SERVER_NAME' => 'demoshop.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/Xampp/htdocs/demo-shop'
+    'SERVER_ADMIN' => 'webmaster@yourdomain.com'
+    'SCRIPT_FILENAME' => 'D:/Xampp/htdocs/demo-shop/index.php'
+    'REMOTE_PORT' => '52063'
+    'REDIRECT_URL' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/assets/2c9363da/js/jquery-ui.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1539178944.46
+    'REQUEST_TIME' => 1539178944
+]

@@ -1,0 +1,37 @@
+Message-ID: <cff43e06bd88f833a8e715d86928a5b3@demoshop.test>
+Date: Tue, 09 Oct 2018 18:57:41 +0200
+Subject: New message in the guestbook.
+From: noreply@demoshop.test
+To: admin@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1539104261_763a2dd05ba6f93aa9583f5ae218199f_=_"
+
+
+--_=_swift_v4_1539104261_763a2dd05ba6f93aa9583f5ae218199f_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+User First user leaved message in your guestbook.
+You can view it here.
+
+--_=_swift_v4_1539104261_763a2dd05ba6f93aa9583f5ae218199f_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3=
+.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns=3D"http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DU=
+TF-8" />
+        <title>New message in the guestbook.</title>
+            </head>
+    <body>
+        <p>User <b>First user</b> leaved message in your guestbook.</p>
+<p>You can view it <a href=3D"http://demoshop.test/admin/guestbook/a/view/1=
+">here</a>.</p>        </body>
+    </html>
+
+
+--_=_swift_v4_1539104261_763a2dd05ba6f93aa9583f5ae218199f_=_--
